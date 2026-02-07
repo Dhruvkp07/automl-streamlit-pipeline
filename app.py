@@ -31,9 +31,8 @@ with st.sidebar:
     )
     st.info("Upload → Profile → Train → Download")
 
-# --------------------------------------------------
 # UPLOAD
-# --------------------------------------------------
+
 if choice == "Upload":
     st.header("Upload Dataset")
 
@@ -151,4 +150,5 @@ if choice == "Download":
             )
     else:
         st.warning("No trained model found. Train a model first.")
+
 
