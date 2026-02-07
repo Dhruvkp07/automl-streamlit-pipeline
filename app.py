@@ -7,25 +7,22 @@ from flaml import AutoML
 from sklearn.model_selection import train_test_split
 from ydata_profiling import ProfileReport
 
-# --------------------------------------------------
 # BASIC CONFIG
-# --------------------------------------------------
+
 st.set_page_config(page_title="AutoML App", layout="wide")
 
 DATA_PATH = "dataset.csv"
 MODEL_PATH = "best_model.pkl"
 
-# --------------------------------------------------
 # LOAD DATA IF EXISTS
-# --------------------------------------------------
+
 if os.path.exists(DATA_PATH):
     df = pd.read_csv(DATA_PATH)
 else:
     df = None
 
-# --------------------------------------------------
 # SIDEBAR
-# --------------------------------------------------
+
 with st.sidebar:
     st.title("AutoML Pipeline")
     choice = st.radio(
@@ -154,3 +151,4 @@ if choice == "Download":
             )
     else:
         st.warning("No trained model found. Train a model first.")
+
