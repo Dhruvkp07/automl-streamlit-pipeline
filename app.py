@@ -136,7 +136,7 @@ if choice == "Modelling":
 
 # --------------------------------------------------
 # DOWNLOAD
-# --------------------------------------------------
+
 if choice == "Download":
     st.header("Download Trained Model")
 
@@ -149,6 +149,7 @@ if choice == "Download":
             )
     else:
         st.warning("No trained model found. Train a model first.")
+
 
 
 
