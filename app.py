@@ -44,9 +44,9 @@ if choice == "Upload":
         st.success("Dataset uploaded successfully.")
         st.dataframe(df)
 
-# --------------------------------------------------
+
 # PROFILING
-# --------------------------------------------------
+
 if choice == "Profiling":
     st.header("Exploratory Data Analysis")
 
@@ -67,9 +67,8 @@ if choice == "Profiling":
         scrolling=True
     )
 
-# --------------------------------------------------
 # MODELLING
-# --------------------------------------------------
+
 if choice == "Modelling":
     st.header("AutoML Modelling (FLAML)")
 
@@ -150,5 +149,6 @@ if choice == "Download":
             )
     else:
         st.warning("No trained model found. Train a model first.")
+
 
 
