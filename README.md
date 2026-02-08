@@ -1,7 +1,7 @@
 # AutoML Streamlit Pipeline
 Demo Link : https://automl-app-pipeline-4glc9te8kzdvxj9wrpdv5w.streamlit.app/
 
-An end-to-end AutoML application built using **Streamlit** and **FLAML**.
+An end-to-end Basic AutoML application built using **Streamlit** and **FLAML**.
 
 ## Features
 - Upload CSV datasets
